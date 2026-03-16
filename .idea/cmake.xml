@@ -2,15 +2,15 @@
 <project version="4">
   <component name="CMakeSharedSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug (live preview)" ENABLED="true" CONFIG_NAME="Debug" GENERATION_OPTIONS="-DSLINT_FEATURE_LIVE_PREVIEW=1">
+      <configuration PROFILE_NAME="Debug (live preview)" ENABLED="true" CONFIG_NAME="Debug" GENERATION_OPTIONS="-G Ninja -DSLINT_FEATURE_LIVE_PREVIEW=1">
         <ADDITIONAL_GENERATION_ENVIRONMENT>
           <envs>
             <env name="SLINT_LIVE_PREVIEW" value="1" />
           </envs>
         </ADDITIONAL_GENERATION_ENVIRONMENT>
       </configuration>
-      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
-      <configuration PROFILE_NAME="Release" ENABLED="true" CONFIG_NAME="Release" />
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" GENERATION_OPTIONS="-G Ninja" />
+      <configuration PROFILE_NAME="Release" ENABLED="true" CONFIG_NAME="Release" GENERATION_OPTIONS="-G Ninja" />
     </configurations>
   </component>
 </project>
